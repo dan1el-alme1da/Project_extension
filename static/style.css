@@ -1,0 +1,123 @@
+/* Estilo para a logo */
+.logo-container {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 50px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+body {
+    background-color: #bbbbbb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o título */
+h1 {
+    font-size: 2.5rem;
+    color: #090000;
+    margin-bottom: 20px; /* Reduzido para subir o título */
+}
+
+/* Estilo para o formulário */
+.form-container {
+    max-width: 800px;
+    margin: 20px auto; /* Ajuste para mover o formulário para cima */
+}
+
+/* Estilo para os campos de entrada */
+form .form-control {
+    border: 1px solid #b9b3b3;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Estilo para os botões */
+button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Botão "Adicionar Despesa" */
+button.btn-primary {
+    background-color: hsl(175, 100%, 50%);
+    color: rgb(0, 0, 0);
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Botão "Limpar" */
+button.btn-secondary {
+    background-color: hsl(175, 100%, 50%);
+    color: rgb(3, 0, 0);
+}
+
+button.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Botão "Editar" */
+button.btn-warning {
+    background-color: hsl(175, 100%, 50%);
+    color: rgb(3, 0, 0);
+}
+
+button.btn-warning:hover {
+    background-color: #0056b3;
+}
+
+/* Botão "Deletar" */
+button.btn-danger {
+    background-color: #120251;
+    color: white;
+}
+
+button.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Estilo para a tabela */
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+thead th {
+    background-color: #007bff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+}
+
+tbody td {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Branco para linhas ímpares */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d9d8d8; /* Cinza claro para linhas pares */
+}
+
+/* Estilo das ações */
+tbody td form {
+    display: inline-block;
+}
