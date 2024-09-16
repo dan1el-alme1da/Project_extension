@@ -1,5 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for
 import psycopg2
+from dotenv import load_dotenv
+import os
+
+# Carrega as variáveis do arquivo .env
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -9,7 +14,14 @@ class AppBD:
 
     def abrirConexao(self):
         try:
-            self.connection = psycopg2.connect(user="postgres", password="kelly", host="127.0.0.1", port="5433", database="IBHJ_database")
+            # Use as variáveis de ambiente no lugar de strings fixas
+            self.connection = psycopg2.connect(
+                user=os.getenv("DB_USER"),
+                password=os.getenv("DB_PASSWORD"),
+                host=os.getenv("DB_HOST"),
+                port=os.getenv("DB_PORT"),
+                database=os.getenv("DB_NAME")
+            )
         except (Exception, psycopg2.Error) as error:
             print("Falha ao se conectar ao Banco de Dados", error)
 
